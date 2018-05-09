@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import Head from 'next/head'
 import GoogleMapReact from 'google-map-react';
+import { locations } from '../locations';
 import { GMAPS_API_KEY } from '../config';
+
+const mapCenter = {lat: 38.91131141655464, lng: -77.04375138092037};
+const markerCredit = 'Map Marker by Viktor Vorobyev from the Noun Project'
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class SimpleMap extends Component {
   static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33
-    },
-    zoom: 11
+    center: mapCenter,
+    zoom: 16
   };
 
   render() {
@@ -27,11 +28,9 @@ class SimpleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text={'Kreyser Avrora'}
-          />
+          {locations.map( location => 
+            ( <AnyReactComponent {...location} text={location.id} key={location.id} /> )
+          )}
         </GoogleMapReact>
 				<style jsx global>{`
 					body { 

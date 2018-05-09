@@ -11,18 +11,20 @@ const placeStyle = {
   position: 'absolute',
 	transform: 'translate(-50%, -50%)'
 }
+// const markerSrc = '../static/marker_2.svg';
+const markerSrc = '../static/blah_050916.png';
+
 // const markerStyle = { display: 'inline-block', height: MARKER_SIZE, width: MARKER_SIZE, cursor: 'pointer', transform: 'translate(-25%,-100%)'}
 const markerStyle = { ...placeStyle, display: 'inline-block', cursor: 'pointer' }
 const marker = ({id}) => ( <div key={id} style={markerStyle}>
 														{id}
 													</div> )
 // const AnyReactComponent = ({ id }) => (
-//   <div className='marker' style={markerStyle} key={id} >
-//     <img src='../static/noun_343687_cc.svg' fill={'#666'} style={{width: MARKER_SIZE, height: MARKER_SIZE}} />
-//   </div>
+//     <img className='marker-svg' src={markerSrc} fill={'#666'} style={{ ...markerStyle, width: MARKER_SIZE, height: MARKER_SIZE}} />
 // )
+
 const AnyReactComponent = ({ id }) => (
-    <img src='../static/noun_343687_cc.svg' fill={'#666'} style={{ ...markerStyle, width: MARKER_SIZE, height: MARKER_SIZE}} />
+    <img className='marker-svg' src={markerSrc} fill={'#666'} style={{ ...markerStyle }} />
 )
 const markers = ( locations, handler ) => {
   return locations.map(location => (

@@ -6,4 +6,4 @@ dist
 # Dependencies
 node_modules/
 package-lock.json
-config.json
+config.js

@@ -4,12 +4,16 @@
   "description": "Demo of google-map-react and Next.js",
   "main": "index.js",
   "scripts": {
+		"dev": "next",
+    "build": "next build",
+    "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gpolyn/nextjs-google-map-react.git"
   },
+  "engines" : { "node" : ">8.0.0" },
   "keywords": [
     "Next.js",
     "google-map-react"

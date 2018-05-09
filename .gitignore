@@ -1,0 +1,9 @@
+# Build Output
+dist
+.next
+.DS_Store
+
+# Dependencies
+node_modules/
+package-lock.json
+config.json

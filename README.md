@@ -1,5 +1,5 @@
 # nextjs-google-map-react
-Demo of `google-map-react@1.0.0` and Next.js
+Demo of `google-map-react@1.0.0` and [Next.js](https://github.com/zeit/next.js).
 ```bash
 node -v # >= 8 
 npm install 

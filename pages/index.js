@@ -9,6 +9,7 @@ const markerCredit = 'Map Markers by Viktor Vorobyev from the Noun Project'
 const MARKER_SIZE = 34;
 const placeStyle = {
   position: 'absolute',
+  width: 20,
 	transform: 'translate(-50%, -50%)'
 }
 // const markerSrc = '../static/marker_2.svg';

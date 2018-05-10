@@ -8,6 +8,6 @@ Then just run `npm run dev` and go to `http://localhost:3000`. To use another po
 
 After dev, try
 ```bash
-next build
-next start
+npm run build
+npm run start
 ```

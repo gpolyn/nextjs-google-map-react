@@ -4,10 +4,9 @@
   "description": "Demo of google-map-react and Next.js",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,11 @@
   "homepage": "https://github.com/gpolyn/nextjs-google-map-react#readme",
   "dependencies": {
     "google-map-react": "0.34.0",
+    "inferno": "5.0.5",
+    "inferno-clone-vnode": "5.0.5",
+    "inferno-compat": "5.0.5",
+    "inferno-server": "5.0.5",
+    "module-alias": "2.0.6",
     "next": "6.0.2",
     "react": "16.3.2",
     "react-dom": "16.3.2"
